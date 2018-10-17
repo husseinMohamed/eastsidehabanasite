@@ -1,0 +1,510 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight');
+
+$fontOne: 'Raleway', sans-serif;
+$fontTwo: 'Zilla Slab Highlight', cursive;
+$orange: #ff9801;
+$blue: #22438a;
+$lightergray: #eceef1;
+
+.background{
+    width: 100%;
+    height: 100%;
+        
+        .bgSection{
+            position: relative;
+            margin: 0 auto;
+        }
+
+            .bg{
+              width: 100%;
+              height: 800px;
+              overflow: hidden;
+              background-size: cover;
+              background-attachment: fixed;
+              background-repeat: no-repeat;
+              display: block;
+              position: relative;
+           }
+
+           .bookBtn{
+               position: absolute;
+               top:4%;
+               right:2%;
+               color: $blue;
+               background: white;
+               padding: 10px 45px 10px 45px;
+               filter: drop-shadow(0x0 0 5px black);
+               font-family: $fontOne;
+               font-weight: 600;
+              
+               opacity: 0.8;
+
+           }
+
+             .bookBtn:hover{
+                 color: #fff;
+                 background: $orange;
+                 opacity: 1;
+             }
+                .bgText{
+                  position: absolute;
+                  top: 35%;
+                  width: 100%;
+                  text-align: center;
+                  font-family: $fontOne;
+                  filter: drop-shadow(5px 5px 15px black);
+                  
+                  
+                    .bgTitle{
+                        color: white;
+                        font-size: 85px;
+                        
+                    }
+
+                     .bgP{
+                         color: white;
+                         font-size: 35px;
+                         filter: drop-shadow(5px 5px 15px black);
+                         font-weight: 500;
+                         span{
+                             color: $orange;
+                         }
+                     }
+                }
+             
+                 .navContainer{
+                     text-align: center;
+                     position: absolute;
+                     top: 750px;
+                     left: 0%;
+                     right: 0%;
+                     filter: drop-shadow(0 3px 20px gray);
+                     
+                     max-width: 80%;
+                    
+                        
+                    a{
+                        list-style: none;
+                        color: $blue;
+                        text-decoration: none;
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+
+                        li{
+                            background: #fff;
+                            height: 110px;
+                            display: inline-block;
+                            padding-top: 40px;
+                            width: 220px;
+                            box-shadow: inset 0px 0px 1px rgba(0,0,0,0.2);
+                        }
+                            
+                            a:hover{
+                                color: $orange;
+                            }
+
+                              
+
+
+                 }
+
+                 @media only screen and (max-width: 1200px) {
+                   .bg{
+                       height: 600px;
+                      
+                   }
+                   .bgText{
+                       top: 30%;
+                   }
+                   .bgTitle{
+                       font-size: 75px !important;
+                   }
+              
+                   .navContainer{
+                       top: 545px;
+                   }
+                }
+
+                @media only screen and (max-width: 930px) {
+                    .bg{
+                        height: 600px;
+                       
+                    }
+                    .navContainer{
+                       display: none;
+                    }
+                 }
+                 @media only screen and (max-width: 730px) {
+                    .bg{
+                        height: 350px;
+                    }
+                    .navContainer{
+                       display: none;
+                    }
+                 }
+                 @media only screen and (max-width: 588px) {
+                   .bookBtn{
+                       top: 400px;
+                       width: 100%;
+                       text-align: center;
+                       background: $blue;
+                       color: #fff;
+                   }
+                   .bgText{
+                    top: 20%;
+                 }
+                 }
+
+                 @media only screen and (max-width: 455px) {
+                    
+                   .bgP{
+                       font-size: 5.5vw !important;
+                   }
+                  }
+                
+}
+
+.wrapperOverview{
+    width: 100%;
+    height: 700px;
+    background: #fff;
+    position: relative;
+
+        .overviewText{
+            font-size: 280px;
+            position: absolute;
+            font-weight: 700;
+            opacity: 0.4;
+            width: 100%;
+            text-align: center;
+            top: 3%;
+            color: lightgray;
+            
+        }
+
+       
+
+          .containerP{
+             
+              position: relative;
+              top: 48%;
+              width: 800px;
+          }
+          
+          @media only screen and (max-width: 1464px) {
+            .overviewText {
+               font-size: 200px;
+            }
+            .containerP{
+                top:40%;
+            }
+        }
+
+        @media only screen and (max-width: 1060px) {
+            .overviewText {
+               font-size: 15vw;
+            }
+            .containerP{
+                top:30%;
+            }
+        }
+
+        @media only screen and (max-width: 626px) {
+           
+            .containerP{
+                width:100%;
+                top: 15%;
+            }
+        }
+            .overviewP{
+                font-size: 20px;
+                color: gray;
+                
+            }
+}
+
+
+.containerGallery{
+    
+    position: relative;
+ 
+
+        .gallery2{
+            position: relative;
+            
+        }
+
+            .gallery3{
+                position: relative;
+                margin-top: 7%;
+            }
+
+            @media only screen and (max-width: 767px) {
+                    
+                .gallery2{
+                    margin-top: 40px;
+                }
+                .gallery3{
+                    margin-top: 40px;
+                }
+               }
+               @media only screen and (max-width: 459px) {
+                    
+               .gallery1{
+                   padding-top: 200px !important;
+               }
+               }
+}
+ 
+
+ .specsWrapper{
+     position: relative;
+     width: 100%;
+     height: 100vh;
+    
+     
+
+        .grayBox{
+            position: absolute;
+            top: 0;
+            height: 50%;
+            width: 100%;
+            background: lightgray;
+            opacity: 0.3;
+            
+        }
+            .specsBox{
+                position: absolute;
+                background: #fff;
+                top: 25%; 
+                height: 50%;
+                width: 100%;
+                left: 1%;
+                right: 1%;
+                filter: drop-shadow(0 0 16px gray);
+            }
+
+                .specTitle{
+                    position: relative;
+                    width: 100%;
+                    text-align: center;
+                    font-family: $fontOne;
+                    font-size: 50px;
+                    color:$blue;
+                    filter: drop-shadow(0 0 6px lightgray);
+                    top: 6%;
+                    font-weight: 600;
+
+                }
+
+                    .specP{
+                        font-family: $fontOne;
+                        color: gray;
+                        font-size: 23px;
+                        position: absolute;
+                        width: 100%;
+                        text-align: center;
+                        top: 12%;
+                        font-weight: 500;
+                    }
+
+                        .rowOne, .rowTwo{
+                            margin: 80px 0 80px 0;
+                            color: gray;
+                            box-shadow: inset 0px 0px 1px rgba(0,0,0,0.2);
+                            font-family: $fontOne;
+                            padding: 15px 0 15px 0;
+
+                                h3{
+                                    font-size: 35px;
+                                    opacity: 0.5;
+                                }
+
+                                    p{
+                                        font-size: 15px;
+                                        font-weight: 600;
+                                        
+                                    }
+                        }
+
+                        @media only screen and (max-width: 767px) {
+                    
+                            .specsBox{
+                                height: 110%;
+                                width: 100%;
+                            }
+                            }
+
+                            @media only screen and (max-width: 430px) {
+                    
+                                .specTitle{
+                                    font-size: 10vw;
+                                   
+                                }
+                                }
+                                
+
+ }
+
+
+
+ .amenitiesWrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+               .amenitiesTitle{
+                   position: relative;
+                   width: 100%;
+                   text-align: center;
+                   font-family: $fontOne;
+                   font-size: 50px;
+                   color:$orange;
+                  
+                   top: 6%;
+                   font-weight: 600;
+                    
+               }
+
+                   .amenitiesP{
+                       font-family: $fontOne;
+                       color: gray;
+                       font-size: 23px;
+                       position: absolute;
+                       width: 100%;
+                       text-align: center;
+                       top: 12%;
+                       font-weight: 500;
+                      
+                     
+                   }
+
+                       .rowThree, .rowFour{
+                           margin: 80px 0 80px 0;
+                           color: gray;
+                           
+                           
+                           
+                          
+                           font-family: $fontOne;
+                           padding: 15px 0 15px 0;
+
+                             
+
+                                   p{
+                                       font-size: 15px;
+                                       font-weight: 600;
+                                       
+                                   }
+                       }
+
+                       .amenitiesImg{
+                           margin-bottom: 25px;
+                       }
+
+                       @media only screen and (max-width: 767px) {
+                    
+                        .amenitiesTitle{
+                            margin-top: 400px;
+                           
+                        }
+                        }
+
+
+}
+
+.inquiryWrapper{
+    width: 100%;
+
+    .inquiryBanner{
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background: $blue;
+
+        .inquiryTitle{
+            position: absolute;
+            font-family: $fontOne;
+            color: #fff;
+            font-size: 95px;
+            width: 100%;
+            text-align: center;
+            top: 30%;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+                    
+        .inquiryBanner{
+            margin-top: 1100px;
+           
+        }
+        }
+
+        @media only screen and (max-width: 699px) {
+                    
+            .inquiryTitle{
+                font-size: 13vw !important;
+               
+            }
+            }
+
+            @media only screen and (max-width: 506px) {
+                    
+                .inquiryTitle{
+                    font-size: 16vw !important;
+                    top: 26% !important;
+                   
+                }
+                }
+}
+
+form{
+   color: gray;
+    padding: 30px;
+   
+        .messageBox{
+            height: 100px;
+            
+        }
+
+
+        .formSubmitBtn{
+            color: $blue;
+            background: #fff;
+            padding: 10px 45px 10px 45px;
+            font-weight: 600;
+            border: 2px solid $blue;
+        }
+
+            .formSubmitBtn:hover{
+                color: orange;
+                border: 2px solid $orange;
+
+            }
+
+           
+    
+}
+
+.bookBtnTwo{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    background: $orange;
+    color: #fff;
+    font-size: 30px;
+    font-family: $fontOne;
+}
+
+.bookBtnTwo:hover{
+    background: $blue;
+}
+
+.signature{
+    width: 100%;
+    text-align: center;
+    opacity: 0.4;
+}
+
